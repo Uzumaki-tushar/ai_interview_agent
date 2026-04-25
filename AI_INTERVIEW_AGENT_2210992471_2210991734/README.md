@@ -1,12 +1,10 @@
-﻿# 🤝 AI INTERVIEW AGENT
+AI INTERVIEW AGENT
 
 An end-to-end AI-powered recruitment pipeline that screens candidates from their resume and conducts a full AI-driven interview — all running **100% locally** on your machine using Ollama.
 
----
 
-## 📸 Pipeline Overview
+Pipeline Overview
 
-```
 ┌─────────────────────────────────────────────────────────────┐
 │                    AI Recruitment System                     │
 ├──────────┬──────────┬──────────────┬───────────┬───────────┤
@@ -22,9 +20,7 @@ An end-to-end AI-powered recruitment pipeline that screens candidates from their
 └──────────┴──────────┴──────────────┴───────────┴───────────┘
 ```
 
----
-
-## ✨ Features
+ Features
 
 - **PDF Resume Ingestion** — Upload a PDF and it's chunked, embedded, and stored in a local Chroma vector DB using `all-MiniLM-L6-v2` embeddings
 - **RAG Q&A** — Ask any question about the candidate's resume directly from the screening page
@@ -34,9 +30,8 @@ An end-to-end AI-powered recruitment pipeline that screens candidates from their
 - **Per-answer Feedback** — Real-time evaluation after each answer
 - **Final Report** — Technical, Problem-solving, Communication scores + Hire/Hold/Reject recommendation + full transcript
 
----
 
-## 🛠️ Tech Stack
+Tech Stack
 
 | Component | Library |
 |---|---|
@@ -49,9 +44,7 @@ An end-to-end AI-powered recruitment pipeline that screens candidates from their
 | RAG chain | LangChain LCEL |
 | Env management | `python-dotenv` |
 
----
-
-## 💻 System Requirements
+ System Requirements
 
 | Resource | Minimum |
 |---|---|
@@ -60,9 +53,7 @@ An end-to-end AI-powered recruitment pipeline that screens candidates from their
 | Ollama | Latest version |
 | OS | Windows / macOS / Linux |
 
----
-
-## 🚀 Quickstart
+ Quickstart
 
 ### Step 1 — Install Ollama
 
@@ -119,11 +110,8 @@ streamlit run app.py
 
 Open your browser at `http://localhost:8501`
 
----
+ Project Structure
 
-## 📁 Project Structure
-
-```
 ai_recruitment_system/
 ├── app.py                      ← Main Streamlit app (all 5 stages)
 ├── requirements.txt            ← Python dependencies
@@ -133,10 +121,7 @@ ai_recruitment_system/
 └── .streamlit/
     └── config.toml             ← Suppresses torchvision watcher warnings
 ```
-
----
-
-## ⚙️ Configuration
+ Configuration
 
 Edit these constants at the top of `app.py`:
 
@@ -148,9 +133,7 @@ Edit these constants at the top of `app.py`:
 | `MATCH_THRESHOLD` | `70` | Minimum % score to pass screening |
 | `NUM_QUESTIONS` | `5` | Number of interview questions |
 
----
-
-## 🔄 How It Works — Stage by Stage
+ How It Works — Stage by Stage
 
 ### Stage 1 · Candidate Details
 Fill in the candidate's name, email, years of experience, current role, education, and paste the full job description.
@@ -180,9 +163,7 @@ You can also ask free-form questions about the resume using the built-in RAG pan
 - **Recommendation: Hire / Hold / Reject**
 - Full transcript with per-answer feedback
 
----
-
-## 🐛 Common Issues
+ Common Issues
 
 ### `model requires more system memory than is available`
 Your RAM is too low for the selected model. Switch to a smaller one:
@@ -202,9 +183,7 @@ Make sure Ollama is running:
 ollama serve
 ```
 
----
-
-## 🧩 Project Origins
+ Project Origins
 
 This project merges three separate applications:
 
