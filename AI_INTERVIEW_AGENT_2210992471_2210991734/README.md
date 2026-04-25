@@ -6,7 +6,7 @@ An end-to-end AI-powered recruitment pipeline that screens candidates from their
 Pipeline Overview
 
 ┌─────────────────────────────────────────────────────────────┐
-│                    AI Recruitment System                     │
+│                    AI Recruitment System                     
 ├──────────┬──────────┬──────────────┬───────────┬───────────┤
 │ Stage 1  │ Stage 2  │   Stage 3    │  Stage 4  │  Stage 5  │
 │ Details  │ Resume   │  Screening   │ Interview │  Result   │
